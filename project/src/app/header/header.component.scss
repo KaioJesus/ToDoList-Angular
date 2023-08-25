@@ -1,0 +1,19 @@
+
+.cabecalho{
+    background-color: #AF7EEB;
+    height: 6.25em;
+    // width: 30%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .cabecalho__titulo{
+        color: white;
+
+        font-size: 2.125rem;
+        font-weight: 700;
+
+        padding: 1em 0 ;
+    }
+}
