@@ -1,3 +1,4 @@
+import { AfazerComponent } from './../afazer/afazer.component';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class TaskComponent {
 
+  public nome: string = "";
+  public list: Array<{nome: string}> = [];
+
+  public salvar(){
+    this.list.push({nome: this.nome})
+    this.nome = ""; // para excluir o nome do input dps de incluir na lista
+  }
 }

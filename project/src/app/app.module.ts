@@ -7,6 +7,8 @@ import { HeaderComponent } from './header/header.component';
 import { BodyComponent } from './body/body.component';
 import { TaskComponent } from './task/task.component';
 import { ListComponent } from './list/list.component';
+import { AfazerComponent } from './afazer/afazer.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { ListComponent } from './list/list.component';
     HeaderComponent,
     BodyComponent,
     TaskComponent,
-    ListComponent
+    ListComponent,
+    AfazerComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

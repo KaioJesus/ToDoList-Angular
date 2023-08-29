@@ -18,6 +18,19 @@
         color: white;
         font-size: 1rem;
         opacity: 0.7;
-        padding: 2em 4.3em;
+        padding: 2rem 4.3rem;
     }
+}
+
+.task__botao{
+    background-color: #5f40db;;
+    border-radius: 30px;
+    color: white;
+    display: block;
+    font-size: 1rem;
+    margin: 0 auto;
+    padding: 1rem;
+
+    height: 3rem;
+    width: 10rem;
 }

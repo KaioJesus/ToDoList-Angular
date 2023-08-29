@@ -6,14 +6,70 @@
 
     .card-list{
         background-color: white;
-
-        width: 100%;
-        height: 21.875em;
-        
         box-shadow: 0px 8px 10px 0px #cec9c9;
 
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        height: 21.875em;
+        width: 100%;
+
+        padding: 2rem;
+
+        .list{
+
+            .item{
+                display: flex;
+                justify-content: space-between;
+                list-style: none;
+                margin-top: 0.5rem;
+        
+                .container{
+                    display: inline;
+                    
+                    .item__checkbox{
+                        margin-right: 0.3rem;
+                    }
+                }
+                
+            }
+        }
+        
     }
+
+
+    .task__input{
+        background-color: #AF7EEB;
+        box-shadow: 0px 8px 10px 0px #00000014;
+        color: white;
+    
+        height: 3em;
+        width: 80%;
+    
+        display: block;
+    
+        position: relative;
+        top: -1.2em;
+    
+        margin: 0 auto;
+        padding: 0 1em;
+    
+        &::placeholder{
+            color: white;
+            font-size: 1rem;
+            opacity: 0.7;
+            padding: 2rem 4.3rem;
+        }
+    }
+    
+    .task__botao{
+        background-color: #5f40db;;
+        border-radius: 30px;
+        color: white;
+        display: block;
+        font-size: 1rem;
+        margin: 0 auto;
+        padding: 1rem;
+    
+        height: 3rem;
+        width: 10rem;
+    }
+    
 }

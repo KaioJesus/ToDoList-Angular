@@ -1,5 +1,20 @@
 <body class="corpo">
-    <div class="card">
-        <img src="../../assets/bg-task 1.png" alt="Imagem de um celular e um papel com lista de tarefas">
+    <div *ngIf="list.length > 0; else img" class="card">
+        <ul class="list">
+            <li *ngFor="let item of list" class="list-item">
+                <div class="container" style="display: inline;">
+                    <input (click)="concluir()" class="item__checkbox" type="checkbox">
+                    {{item.nome}}
+                </div>
+                <button (click)="excluir()"><img src="../../assets/lixo.svg" alt="Ícone lixeira"></button>
+            </li>
+        </ul>
     </div>
+    <ng-template #img>
+        <div class="card-img">
+            <img src="../../assets/bg-task 1.png" alt="Imagem de um celular e um papel com lista de tarefas">
+        </div>
+    </ng-template>
+    <input [(ngModel)]="nome" routerLink="/list" class="task__input" type="text" placeholder="Digite sua nova Task aqui ...">
+    <button (click)="salvar()" routerLink="/list" class="task__botao">Listar</button>
 </body>
